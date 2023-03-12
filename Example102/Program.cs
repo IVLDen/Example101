@@ -1,79 +1,47 @@
-﻿//Задача  25
-
-/*Console.WriteLine("Введите числа ");
-
-int a;
-int.TryParse (Console.ReadLine()!, out a);
-int b;
-int.TryParse (Console.ReadLine()!, out b);
-
-int res = Kvadrat(a, b);
-
-int Kvadrat (int _a, int _b) {
-
-int t; t = _a;
-for (int i = 1; i <_b; i++) {
-
- t = t * _a;
-
-}
-
-   return t;
-}
-
-Console.WriteLine(res); */
-
-//Задача 27
-
-/*Console.WriteLine("Введите число ");
-int a;
-int.TryParse (Console.ReadLine()!, out a);
-int b = Summa (a);
-Console.WriteLine(b);
-
-
-int Summa (int _a) {
-int t;
+﻿//Задача 34:
+/* int [] array = new int[5];
+Console.WriteLine ("Введите числа: ");
 int sum = 0;
 
-for ( t = _a; _a !=0; _a= _a/10) {
- 
-    t = _a%10;
-    sum = sum + t;
+for (int i = 0; i < array.Length; i++) {
 
-}
-return sum;
-} */ 
+   array[i] = int.Parse(Console.ReadLine());
+   if (array[i] > 0) sum++;
+   }
 
+Console.WriteLine ();
 
-//Задача 29
-
- /*int[] arr = new int[5];
-
-void PutInMassive (int [] _arr) {
- 
-    int lenght = _arr.Length;
-     
-     Console.WriteLine("Заполните массив ");
-     for ( int i = 0; i < lenght; i++ ) {
-      
-       int.TryParse (Console.ReadLine()!, out _arr[i]);
-        }
-}
-
-void ShowMassive (int [] _arr) {
-
-int lenght = _arr.Length;
-for ( int i = 0; i < lenght; i++ ) {
-      
-       Console.WriteLine(_arr[i]);
-        }
-}
+for (int i = 0; i < array.Length; i++) {
+   Console.WriteLine (array[i]); 
+    }
+    
+    Console.WriteLine ();
+    Console.WriteLine ("Количество чисел больше нуля: ");
+   Console.WriteLine (sum); */
 
 
-PutInMassive (arr);
-Console.WriteLine();
-Console.WriteLine();
-ShowMassive (arr); */ 
 
+   // Задача 43
+
+   
+/*
+   Console.WriteLine ("Введите значения к1, b1 и к2, б2");
+    double y, x; 
+    int k1, b1, k2, b2;
+
+   k1 = int.Parse(Console.ReadLine());
+   b1 = int.Parse(Console.ReadLine());
+   k2 = int.Parse(Console.ReadLine());
+   b2 = int.Parse(Console.ReadLine()); 
+
+     Console.WriteLine ("Введите координаты х и у: ");
+
+    x = double.Parse(Console.ReadLine());
+    y = double.Parse(Console.ReadLine());
+
+
+           if (  (((double)(k1 * x) + b1 - y) == 0) && (((double)(k2 * x) + b2 - y) == 0 ) ) Console.WriteLine ("прямые по заданным точкам пересекаются");
+           else Console.WriteLine ("Прямые не перерсекаются ");
+
+ */
 
